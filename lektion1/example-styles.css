@@ -1,0 +1,10 @@
+.example-1 h1 {
+  color: blue;
+}
+.example-1 .heading {
+  background-color: green;
+  color: pink;
+}
+.example-1 #haupt-ueberschrift {
+  color: red;
+}

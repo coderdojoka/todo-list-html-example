@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+  margin: .5em 0 .5em 0;
+}
+.front h1 {
+  font-size: 5em;
+}
+.blinky > h2 {
+  animation: blinky 1s linear infinite both alternate;
+}
+h3 {
+  margin-top: .75em;
+  position: relative;
+}
+h3:before {
+  content: '#';
+  position: absolute;
+  left: -0.75em;
+  font-size: 1.4em;
+  top: 50%;
+  transform: translate(0, -45%);
+}
+.remark-code,
+.remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 1.2em;
+  line-height: 1.25;
+}
+ul {
+  margin: .5em 0;
+}
+li {
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+hr {
+  margin: 2em 0;
+}
+.html-result {
+  padding: 1em;
+  background: rgba(100, 245, 0, 0.2);
+}
+.html-result *:first-child {
+  margin-top: 0;
+}
+.html-result *:last-child {
+  margin-bottom: 0;
+}
+.split {
+  display: flex;
+  flex-direction: row;
+}
+.split .split-right {
+  flex: 1 1 50%;
+  margin-left: .25em;
+}
+.split .split-left {
+  flex: 1 1 50%;
+  margin-right: .25em;
+}
+@keyframes blinky {
+  0% {
+    color: red;
+    transform: scale(1);
+  }
+  50% {
+    color: green;
+    transform: scale(1.5);
+  }
+  100% {
+    color: blue;
+    transform: scale(0.5);
+  }
+}

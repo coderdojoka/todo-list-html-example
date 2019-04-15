@@ -1,4 +1,4 @@
-class: center, middle, front
+class: center, middle, front blinky
 
 # HTML
 
@@ -185,3 +185,91 @@ Dieser <strong>Text</strong> ist <em>formatiert!</em>
 ```
 
 ### Viele mehr...
+
+---
+
+class: middle center front
+
+# CSS
+
+## Cascading Style sheets
+
+---
+
+# CSS: Zu bedenken
+
+### Verschiedene Einheiten, mögliche Werte:
+Je nach Verwendung: `20px`, `12pt`, `50%`, `#fefefe` ...
+
+--
+
+### Regeln "kaskadieren"
+Regeln werden von den Eltern-Elementen geerbt (übertragen)
+
+--
+
+### Welche Elemente sind betroffen:
+Betrifft bestimmte Tags, Klassen,  oder IDs.
+
+--
+
+### Regeln werden von wichtigeren Regeln überschrieben
+- spätere Regeln überschreiben vorhergehende Regeln
+- spezifischere Regeln überschreiben allgemeinere Regeln
+
+
+---
+
+# CSS: Beispiel
+
+```html
+  <h1>Nur h1</h1>
+  <h1 class="heading">h1 mit Klasse</h1>
+  <h1 class="heading" id="haupt-ueberschrift">
+    h1 mit Klasse und Id
+  </h1> 
+```
+
+--
+
+.split[
+.split-left[
+```css
+h1 {
+  color: blue;
+}
+.heading{
+  background-color: green;
+  color: pink;
+}
+#haupt-ueberschrift{
+  color: red
+}
+```
+]
+
+.split-right[
+<div class="example-1">
+  <h1>Nur h1</h1>
+  <h1 class="heading">h1 mit Klasse</h1>
+  <h1 class="heading" id="haupt-ueberschrift">h1 mit Klasse und Id</h1> 
+</div>
+]
+]
+
+---
+
+
+---
+
+### Schrift- und Hintergrundfarbe
+```css
+color: blue;
+background-color: red;
+```
+
+### Breite und Höhe
+```css
+width: 80%;
+min-height: 250px;
+```

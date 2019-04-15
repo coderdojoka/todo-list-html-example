@@ -8,68 +8,10 @@
       @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Roboto', sans-serif; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-        margin: .5em 0 .5em 0;
-      }
-
-      .front h1{
-        font-size: 5em;
-      }
-
-      .front h2{
-        animation: blinky 1s linear infinite both alternate;
-      }
-
-      h3{
-        margin-top: 1em;
-      }
-
-      .remark-code, .remark-inline-code { 
-        font-family: 'Ubuntu Mono';
-        font-size: 1.2em;
-        line-height: 1.25;
-      }
-
-      li{
-        line-height: 1.5;
-        font-size: 1.1em;
-      }
-
-      hr{
-        margin: 2em 0;
-      }
-
-      .html-result{
-        padding: 1em;
-        background: rgba(100,245,0,.2);
-      }
-
-      .html-result *:first-child{
-          margin-top: 0;
-      }
-      
-      .html-result *:last-child{
-          margin-bottom: 0;
-      }
-
-      @keyframes blinky{
-        0% {
-          color: red;
-          transform: scale(1);
-        }
-        50%{
-          color: green;
-          transform: scale(1.5);
-        }
-        100%{
-          color: blue;
-          transform: scale(.5);
-        }
-      }
+     
     </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="example-styles.css">
   </head>
   <body>   
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
