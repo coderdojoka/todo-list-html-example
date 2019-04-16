@@ -7,7 +7,6 @@ $(document).ready(function() {
             newMessage.appendChild(newMessageText); // Add message to message box
             $(".history").append(newMessage); // Add message box to conversation
             $(".history").children().last().addClass("msg-sent"); // Add css class to added message
-            $(".history").append(document.createElement("br")); // Linebreak
             $("#msg-input").val(""); // Clear input field
         }
     })
