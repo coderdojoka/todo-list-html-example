@@ -219,6 +219,7 @@ Betrifft bestimmte Tags, Klassen,  oder IDs.
 
 
 ---
+name: css-example
 
 # CSS: Beispiel
 
@@ -230,7 +231,57 @@ Betrifft bestimmte Tags, Klassen,  oder IDs.
   </h1> 
 ```
 
---
+---
+
+template: css-example
+
+.split[
+.split-left[
+```css
+h1 {
+  color: blue;
+}
+```
+]
+
+.split-right[
+<div class="example-1">
+  <h1>Nur h1</h1>
+  <h1 class="">h1 mit Klasse</h1>
+  <h1 class="" id="">h1 mit Klasse und Id</h1> 
+</div>
+]
+]
+
+---
+
+template: css-example
+
+.split[
+.split-left[
+```css
+h1 {
+  color: blue;
+}
+.heading{
+  background-color: green;
+  color: pink;
+}
+```
+]
+
+.split-right[
+<div class="example-1">
+  <h1>Nur h1</h1>
+  <h1 class="heading">h1 mit Klasse</h1>
+  <h1 class="heading" id="">h1 mit Klasse und Id</h1> 
+</div>
+]
+]
+
+---
+
+template: css-example
 
 .split[
 .split-left[
@@ -259,9 +310,6 @@ h1 {
 
 ---
 
-
----
-
 ### Schrift- und Hintergrundfarbe
 ```css
 color: blue;
@@ -271,5 +319,42 @@ background-color: red;
 ### Breite und Höhe
 ```css
 width: 80%;
+max-width: 450px;
 min-height: 250px;
+...
+```
+
+### Schriftart und Varianten
+```css
+font-family: "Roboto, Arial, sans-serif";
+font-weight: bold;
+text-transform: uppercase;
+```
+
+---
+
+# Box Model
+
+![Box Model](Boxmodell.svg)
+.img-source[ [Quelle: By Matthias Apsel - Vectorized from Boxmodell-detail.png, CC0](https://commons.wikimedia.org/w/index.php?curid=44610332)]
+
+---
+
+# Box Model II
+
+<div class="example-2">
+  <div class="box box-1">Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt</div>
+  <div class="box box-2">Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt Inhalt</div>
+</div>
+
+--
+
+<hr>
+
+### Schreibweise
+
+```css
+margin: oben rechts unten links;
+padding: 10px 20px 10px 20px;
+border: 2px solid green;
 ```

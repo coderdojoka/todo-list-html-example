@@ -13,7 +13,7 @@ h4 {
   font-size: 5em;
 }
 .blinky > h2 {
-  animation: blinky 1s linear infinite both alternate;
+  animation: blinky 2s ease-out infinite both alternate;
 }
 h3 {
   margin-top: .75em;
@@ -26,6 +26,28 @@ h3:before {
   font-size: 1.4em;
   top: 50%;
   transform: translate(0, -45%);
+}
+img {
+  max-width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+}
+img + .img-source {
+  font-size: .6em;
+  color: gray;
+  display: block;
+  width: 80%;
+  margin: .2em auto;
+  text-align: center;
+}
+img + .img-source a {
+  color: gray;
+}
+a {
+  outline: none;
+  color: black;
 }
 .remark-code,
 .remark-inline-code {
