@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 .header {
     background-color: rgb(35, 100, 25);
@@ -11,23 +12,29 @@
 }
 .history {
     background-color: #FFF;
+    display: flex;
+    flex-direction: column;
 }
 .history div {
     margin: 10px;
     padding: 15px;
     border-radius: 5px;
-    display: inline-block;
+    width: 25%;
+    max-width: 400px;
+    
+    flex: 0 1 0;
     /*How to align message blocks to left or right?*/
 }
 .msg-sent {
     background-color: #22992244;
+    align-self: flex-end;
 }
 .msg-received {
     background-color: #11881188;
+    align-self: flex-start;
 }
 .input {
-    width: 100vw;
-    height: 5vh;
+    width: 100%;
     background-color: rgb(35, 100, 25);
     padding: 5px;
     position: absolute;
