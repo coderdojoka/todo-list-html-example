@@ -7,6 +7,21 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+createDemoData();
+
+
+function createDemoData() {
+  document.getElementById("myInput").value = "Mathe Hausaufgaben";
+  newToDoElement();
+  document.getElementById("myInput").value = "Zimmer aufraeumen";
+  newToDoElement();
+  document.getElementById("myInput").value = "Mit Hund gassi gehen";
+  li = newToDoElement();
+  li.classList.toggle('checked');
+  document.getElementById("myInput").value = "Kuchen backen";
+  newToDoElement();
+}
+
 // Funktion um ein neues ToDo Element zur Liste hinzuzufuegen
 // Wird aufgerufen wenn man auf den "Hinzufuegen" Knopf drueckt
 function newToDoElement() {
@@ -41,4 +56,6 @@ function newToDoElement() {
 
   // Am Ende leeren wir noch das ToDo Eingabefeld, damit der Nutzer ein neues ToDo eingeben kann
   document.getElementById("myInput").value = "";
+
+  return li;
 }
