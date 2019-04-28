@@ -1,0 +1,100 @@
+.box-shadow {
+    display       : flex;
+    flex-direction: row;
+
+    .box {
+        flex            : 1 1 33%;
+        width           : 200px;
+        height          : 80px;
+        margin          : 1em;
+        background-color: darkcyan;
+        border          : 2px solid black;
+
+        &.rund {
+            border-radius: 8px;
+        }
+
+        &.schatten {
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, .85);
+        }
+    }
+}
+
+.hover {
+    display: flex;
+
+    .box {
+        width     : 120px;
+        height    : 120px;
+        margin    : 1em;
+        background: red;
+        border    : 3px dashed black;
+
+        &.hovered:hover {
+            background: green;
+        }
+
+        &.hovered-transform:hover {
+            background: green;
+            transform : scale(1.2) rotate(15deg);
+        }
+
+        &.uebergang {
+            transition: transform .25s linear;
+        }
+    }
+}
+
+
+.transform {
+    display: flex;
+
+    .box {
+        width     : 90px;
+        height    : 90px;
+        margin    : .5em;
+        background: red;
+        border    : 3px dashed black;
+    }
+
+    .rotiert {
+        transform: rotate(45deg);
+    }
+
+    .skaliert {
+        transform: scale(1.25);
+    }
+
+    .kombiniert {
+        transform: scale(1.2) translate(140px, 15px) rotate(45deg);
+    }
+}
+
+
+.position {
+    position  : relative;
+    padding: 1em;
+    .relative-parent {
+        position  : relative;
+        height    : 350px;
+        background: rgba(0, 255, 0, .35);
+    }
+
+    .absolute-child {
+        position  : absolute;
+        height    : 80px;
+        width     : 80px;
+        right     : 10px;
+        top       : 10px;
+        background: red;
+    }
+
+   
+}
+.fixiert {
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    width     : 100%;
+    background: rgba(0, 0, 255, .35);
+}

@@ -1,0 +1,81 @@
+.box-shadow {
+  display: flex;
+  flex-direction: row;
+}
+.box-shadow .box {
+  flex: 1 1 33%;
+  width: 200px;
+  height: 80px;
+  margin: 1em;
+  background-color: darkcyan;
+  border: 2px solid black;
+}
+.box-shadow .box.rund {
+  border-radius: 8px;
+}
+.box-shadow .box.schatten {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.85);
+}
+.hover {
+  display: flex;
+}
+.hover .box {
+  width: 120px;
+  height: 120px;
+  margin: 1em;
+  background: red;
+  border: 3px dashed black;
+}
+.hover .box.hovered:hover {
+  background: green;
+}
+.hover .box.hovered-transform:hover {
+  background: green;
+  transform: scale(1.2) rotate(15deg);
+}
+.hover .box.uebergang {
+  transition: transform .25s linear;
+}
+.transform {
+  display: flex;
+}
+.transform .box {
+  width: 90px;
+  height: 90px;
+  margin: .5em;
+  background: red;
+  border: 3px dashed black;
+}
+.transform .rotiert {
+  transform: rotate(45deg);
+}
+.transform .skaliert {
+  transform: scale(1.25);
+}
+.transform .kombiniert {
+  transform: scale(1.2) translate(140px, 15px) rotate(45deg);
+}
+.position {
+  position: relative;
+  padding: 1em;
+}
+.position .relative-parent {
+  position: relative;
+  height: 350px;
+  background: rgba(0, 255, 0, 0.35);
+}
+.position .absolute-child {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  right: 10px;
+  top: 10px;
+  background: red;
+}
+.fixiert {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 255, 0.35);
+}

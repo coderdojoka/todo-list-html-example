@@ -30,3 +30,15 @@
   flex-basis: 25%;
   background-color: rgba(0, 255, 0, 0.5);
 }
+.box-shadow .box {
+  width: 200px;
+  height: 80px;
+  margin: 1em;
+  border: 1px solid black;
+}
+.box-shadow .box.box-2 {
+  border-radius: 8px;
+}
+.box-shadow .box.box-3 {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}

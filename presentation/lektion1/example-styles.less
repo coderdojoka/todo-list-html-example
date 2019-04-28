@@ -1,0 +1,59 @@
+.example-1 {
+    h1 {
+        color: blue;
+    }
+
+    .heading {
+        background-color: green;
+        color           : pink;
+    }
+
+    #haupt-ueberschrift {
+        color: red;
+    }
+}
+
+.example-2 {
+    padding         : 1em;
+    display         : flex;
+    background-color: rgba(255, 255, 0, .5);
+
+    .box {
+        flex  : 1 0 auto;
+        border: 5px dashed rgba(0, 0, 0, .5);
+
+        padding   : 1em;
+        margin    : .5em;
+        min-width : 25%;
+        min-height: 100px;
+        font-size : 1.25em;
+
+        &.box-1 {
+            flex-basis      : 50%;
+            background-color: rgba(255, 0, 0, .5);
+        }
+
+        &.box-2 {
+            flex-basis      : 25%;
+            background-color: rgba(0, 255, 0, .5);
+        }
+    }
+}
+
+.box-shadow {
+    .box {
+        width : 200px;
+        height: 80px;
+        margin: 1em;
+        border: 1px solid black;
+
+        &.box-2 {
+            border-radius: 8px;
+        }
+
+
+        &.box-3 {
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+        }
+    }
+}
