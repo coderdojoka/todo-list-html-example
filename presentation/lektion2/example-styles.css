@@ -79,3 +79,22 @@
   width: 100%;
   background: rgba(0, 0, 255, 0.35);
 }
+.js:after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+}
+.js button {
+  min-width: 200px;
+  text-align: center;
+}
+.js #trist {
+  float: right;
+  width: 250px;
+  height: 50px;
+  background: gray;
+}
+.js #trist.bunt {
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}

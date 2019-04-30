@@ -229,3 +229,92 @@ class: center, middle, front blinky
 
 ---
 
+# JS - Button
+
+```html
+<button>Klick mich an!!</button>
+```
+<hr>
+
+<div class="html-result">
+ <div class="js">
+    <button>Klick mich an!!</button>
+  </div>
+</div>
+
+---
+
+# JS - Button mit Klick
+
+```html
+<button onClick="alert('Hallo')">
+  Klick mich an!!
+</button>
+```
+<hr>
+
+<div class="html-result">
+ <div class="js">
+    <button onClick="alert('Hallo')">Klick mich an!!</button>
+  </div>
+</div>
+
+
+---
+
+# JS - Button mit externer Datei
+
+
+```js
+// in der Datei script.js
+function hallo(){
+  alert("Hallo");
+}
+```
+
+```html
+<script src="script.js"></script>
+
+*<button onClick=hallo()">
+  Klick mich an!!
+</button>
+```
+<hr>
+
+<div class="html-result">
+ <div class="js">
+    <button onClick="alert('Hallo')">Klick mich an!!</button>
+  </div>
+</div>
+
+
+
+---
+
+# JS - Button mit Klick
+
+```js
+function bunt(){
+   document.querySelector('#trist').classList.toggle("bunt");
+}
+```
+
+```html
+*<button onClick="bunt()">Machs bunt :)</button>
+<div id="trist"></div>
+```
+
+```css
+.bunt {
+    background: linear-gradient(90deg, #833ab4 0%,
+     #fd1d1d 50%, #fcb045 100%);
+}
+```
+
+</script>
+<div class="html-result">
+ <div class="js">
+    <button onClick="bunt()">Machs bunt :)</button>
+    <div id="trist"></div>
+  </div>
+</div>
