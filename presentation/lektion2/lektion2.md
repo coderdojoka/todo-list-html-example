@@ -318,3 +318,32 @@ function bunt(){
     <div id="trist"></div>
   </div>
 </div>
+
+
+
+---
+
+# JS - Button mit Textfeld
+
+
+```js
+// in der Datei script.js
+function halloEingabe(){
+  var text = document.querySelector('#eingabe').value;
+  alert("Hallo " + text);
+}
+```
+
+```html
+<script src="script.js"></script>
+<input id="eingabe">
+<button onClick=halloEingabe()">Wie heißt du?</button>
+```
+<hr>
+
+<div class="html-result">
+ <div class="js">
+    <input id="eingabe">
+    <button onClick="halloEingabe()">Wie heißt du?</button>
+  </div>
+</div>
